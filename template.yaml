@@ -41,3 +41,17 @@ Resources:
     Properties:
       Name: Explode
       FunctionName: !GetAtt MacroFunction.Arn
+ 
+ Metadata:
+  AWS::ServerlessRepo::Application:
+    Name: "cfn-explode-macro"
+    Description: "macro that provides a template-wide Explode property for CloudFormation resources"
+    Author: "zaro0508"
+    SpdxLicenseId: "Apache-2.0"
+    # paths are relative to .aws-sam/build directory
+    LicenseUrl: "LICENSE"
+    ReadmeUrl: "README.md"
+    Labels: ["serverless", "template"]
+    HomePageUrl: "https://github.com/Sage-Bionetworks-IT/cfn-explode-macro"
+    SemanticVersion: "master"
+    SourceCodeUrl: "https://github.com/Sage-Bionetworks-IT/cfn-explode-macro/tree/master"
