@@ -12,7 +12,7 @@ env:
     - AWS_SECRET_ACCESS_KEY=$AwsTravisSecretAccessKey
 
 install:
-  - pip install pipenv 
+  - pip install pipenv
   - pipenv install --dev
 before_script:
   - mkdir -p ~/.aws
