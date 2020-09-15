@@ -4,7 +4,7 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-awscli = "~=1.18.136"
+awscli = "~=1.18.132"
 aws-sam-cli = "~=1.2.0"
 jsondiff = "~=1.2.0"
 pre-commit = "~=2.7.1"
