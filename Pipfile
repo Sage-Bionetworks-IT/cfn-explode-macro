@@ -4,15 +4,12 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-pylint = "*"
-pytest = "*"
-pytest-mock = "*"
-pre-commit = "*"
-
-[packages]
-aws-sam-cli = "*"
-boto3 = "*"
-botocore = "*"
+awscli = "~=1.18.132"
+aws-sam-cli = "~=1.2.0"
+jsondiff = "~=1.2.0"
+pre-commit = "~=2.7.1"
+pytest = "~=6.0.1"
+pytest-mock = "~=3.3.1"
 
 [requires]
-python_version = "3.6"
+python_version = "3.7"

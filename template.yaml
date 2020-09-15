@@ -25,7 +25,7 @@ Resources:
   MacroFunction:
       Type: AWS::Serverless::Function
       Properties:
-        Runtime: python3.6
+        Runtime: python3.7
         CodeUri: explode/
         Handler: app.handler
         DeadLetterQueue:
@@ -41,3 +41,16 @@ Resources:
     Properties:
       Name: Explode
       FunctionName: !GetAtt MacroFunction.Arn
+
+Metadata:
+  AWS::ServerlessRepo::Application:
+    Name: "cfn-explode-macro"
+    Description: "macro that provides a template-wide Explode property for CloudFormation resources"
+    Author: "Sage-Bionetworks"
+    SpdxLicenseId: "Apache-2.0"
+    LicenseUrl: "LICENSE"
+    ReadmeUrl: "README.md"
+    Labels: ["serverless", "macro", "cloudformation"]
+    HomePageUrl: "https://github.com/Sage-Bionetworks-IT/cfn-explode-macro"
+    SemanticVersion: "0.0.1"
+    SourceCodeUrl: "https://github.com/Sage-Bionetworks-IT/cfn-explode-macro/tree/0.0.1"
