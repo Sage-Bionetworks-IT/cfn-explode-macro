@@ -169,16 +169,30 @@ Metadata:
 ```
 ### Testing
 
-#### Unit tests
- 1. pip install jsondiff
- 2. cd lambdas/cfn-explode-macro
- 3. run `python -m pytest tests/ -v`
+#### Create a local build
 
-#### SAM local tests
-1. Build the lambda
-2. cd lambdas/build/cfn-explode-macro
-3. pip install jq
-4. run
+Use a Lambda-like docker container to build the Lambda artifact
+
+```shell script
+$ sam build --use-container
+```
+
+#### Run unit tests
+
+Tests are defined in the `tests` folder in this project, and dependencies are
+managed with `pipenv`. Install the development dependencies and run the tests
+using `coverage`.
+
+```shell script
+$ pipenv run coverage run -m pytest tests/ -svv
+```
+
+Automated testing will upload coverage results to [Coveralls](coveralls.io).
+
+#### Run integration tests
+
+Running integration tests
+[requires docker](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-cli-command-reference-sam-local-start-api.html)
 
 ```shell
 sam local invoke MacroFunction \
