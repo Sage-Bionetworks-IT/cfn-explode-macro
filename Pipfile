@@ -10,6 +10,7 @@ jsondiff = "~=1.2"
 pre-commit = "~=2.7"
 pytest = "~=6.0"
 pytest-mock = "~=3.3"
+coverage = "~=7.0"
 
 [requires]
 python_version = "3.9"
