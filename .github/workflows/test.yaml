@@ -33,6 +33,7 @@ jobs:
         with:
           file: coverage.lcov
           fail-on-error: false
+          coverage-reporter-version: v0.6.14
 
   sam-build-and-lint:
     runs-on: ubuntu-latest
