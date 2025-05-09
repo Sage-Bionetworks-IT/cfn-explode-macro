@@ -3,3 +3,6 @@ relative_files = True
 
 # Use 'source' instead of 'omit' in order to ignore 'tests/unit/__init__.py'
 source = explode
+
+[report]
+fail_under = 70
