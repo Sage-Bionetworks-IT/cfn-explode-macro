@@ -3,3 +3,8 @@ relative_files = True
 
 # Use 'source' instead of 'omit' in order to ignore 'tests/unit/__init__.py'
 source = explode
+
+[report]
+# lower the threshold because we basically got this lambda from
+# https://github.com/aws-cloudformation/aws-cloudformation-macros/tree/master/Explode
+fail_under = 50
