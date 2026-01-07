@@ -13,4 +13,4 @@ pytest-mock = "~=3.3"
 coverage = "~=7.0"
 
 [requires]
-python_version = "3.9"
+python_version = "3.13"
