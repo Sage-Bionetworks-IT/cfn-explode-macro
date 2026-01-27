@@ -7,10 +7,10 @@ verify_ssl = true
 awscli = "~=1.18"
 aws-sam-cli = "~=1.138"
 jsondiff = "~=1.2"
-pre-commit = "~=2.7"
-pytest = "~=6.0"
+pre-commit = "~=4.5"
+pytest = "~=9.0"
 pytest-mock = "~=3.3"
 coverage = "~=7.0"
 
 [requires]
-python_version = "3.9"
+python_version = "3.13"
